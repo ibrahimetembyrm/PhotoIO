@@ -1,0 +1,51 @@
+
+               /*File folder = new File("D:/UPLOADED");
+               
+               File[] files = folder.listFiles();
+                
+               for (int i = 0; i < files.length; i++) {
+            	   System.out.println(files[i].getName());
+			}*/
+           
+           
+           
+           
+           /*ClassLoader classLoader = this.getClass().getClassLoader();
+           Path configFilePath = Paths.get(classLoader.getResource("files").toURI());   
+
+
+           Files.walk(configFilePath)
+           .filter(s -> s.toString().endsWith(".txt"))
+           .map(Path::getFileName)
+           .sorted()
+           .collect(toList());*/
+           
+           
+           /*try (Stream<Path> walk = Files.walk(Paths.get(UPLOADED_FOLDER))) {
+			
+			List<String> result = walk.filter(Files::isRegularFile)
+					.map(x -> x.toString()).collect(Collectors.toList());
+
+			result.forEach(System.out::println);
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}*/
+		
+		
+		
+		
+		
+		  //listing files in uploaded folder
+         /* try (Stream<Path> walk = Files.walk(Paths.get(UPLOADED_FOLDER))) {
+        	  
+   			List<String> result = walk.filter(Files::isRegularFile)
+   					.map(x -> x.getFileName().toString())
+   					.collect(Collectors.toList());
+   			model.put("files",result );
+
+   		} 
+          catch (IOException e) {
+   			e.printStackTrace();
+   		}*/
+	   
